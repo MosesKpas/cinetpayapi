@@ -1,4 +1,6 @@
-
+<?php
+header("Content-Type: text/html; charset=UTF-8");
+?>
 <html>
     <head>
         <title>CinetPay-SDK-PHP</title>
@@ -12,19 +14,19 @@
         <div class="row d-flex justify-content-center">
             <div class="col-sm-12">
                 <div class="card mx-auto">
-                    <p class="heading">EXEMPLE INTEGRATION PHP</p>
+                    <p class="heading">CINEBUZZ VALIDATION INFOS </p>
                     <form action="action.php" method="post" class="card-details ">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mb-0">
                                     <p class="text-warning mb-0">Nom</p> 
-                                    <input type="text" name="customer_name" id="customer_name" value="Colle"> 
+                                    <input type="text" name="customer_name" id="customer_name" > 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group mb-3">
                                     <p class="text-warning mb-0">Prenom</p>
-                                    <input type="text" name="customer_surname" id="customer_surname" value="Jeremie">
+                                    <input type="text" name="customer_surname" id="customer_surname" >
                                 </div>
                             </div>
                         </div>
@@ -33,18 +35,15 @@
                             <div class="col-md-6">
                                 <div class="form-group mb-0">
                                     <p class="text-warning mb-0">Montant</p> 
-                                    <input type="number" name="amount" id="amount" value="100"> 
+                                    <input type="number" name="amount" id="amount" > 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group mb-3">
                                     <p class="text-warning mb-0">Devise</p>
                                     <select class="form-select" name="currency" id="currency">
-                                        <option value="XOF">XOF</option>
-                                        <option value="XAF">XAF</option>
-                                        <option value="CDF">CDF</option>
-                                        <option value="GNF">GNF</option>
                                         <option value="USD">USD</option>
+                                        <option value="CDF">CDF</option>
                                     </select>
 
                                 </div>
@@ -55,7 +54,7 @@
                            <div class="col-sm-12">
                                <div class="form-group mb-3">
                                     <p class="text-warning mb-0">Description</p>
-                                    <input type="text" name="description" value="Achat sdk">
+                                    <input type="text" name="description" value="Valider la reservation">
                                 </div>
                            </div>
                         
@@ -69,6 +68,7 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
